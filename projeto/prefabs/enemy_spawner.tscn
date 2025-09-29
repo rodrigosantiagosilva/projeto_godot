@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://n7e8nxy1kkfy"]
+
+[ext_resource type="Script" uid="uid://nu0lbathd2yj" path="res://scripts/enemy_spawner.gd" id="1_ksrlw"]
+[ext_resource type="Texture2D" uid="uid://dyvas4tdqe127" path="res://assets/ChatGPT Image 25 de jun. de 2025, 13_31_50.png" id="2_6rej7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bda43"]
+atlas = ExtResource("2_6rej7")
+region = Rect2(0, 0, 341, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4krwg"]
+atlas = ExtResource("2_6rej7")
+region = Rect2(341, 0, 341, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_711kl"]
+atlas = ExtResource("2_6rej7")
+region = Rect2(682, 0, 341, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fenp8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bda43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4krwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_711kl")
+}],
+"loop": true,
+"name": &"portal",
+"speed": 5.0
+}]
+
+[node name="EnemySpawner" type="Node2D"]
+script = ExtResource("1_ksrlw")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Portal" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4, -2)
+scale = Vector2(0.115469, 0.0507812)
+sprite_frames = SubResource("SpriteFrames_fenp8")
+animation = &"portal"
+autoplay = "portal"
+frame = 1
+frame_progress = 0.316881

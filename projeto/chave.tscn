@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://eecfwub52kw1"]
+
+[ext_resource type="Script" uid="uid://gjtt0jrjf3ab" path="res://chave.gd" id="1_ago6s"]
+[ext_resource type="Texture2D" uid="uid://coiw38fng7xjv" path="res://Lockpick.webp" id="2_laavl"]
+[ext_resource type="AudioStream" uid="uid://dgksc3rni8n3o" path="res://assets/SomChave.mp3" id="3_laavl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_laavl"]
+radius = 9.26545
+
+[node name="chave" type="Area2D"]
+scale = Vector2(0.755495, 0.797435)
+script = ExtResource("1_ago6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.19209e-06, 4.76837e-07)
+scale = Vector2(0.0735353, 0.062701)
+texture = ExtResource("2_laavl")
+region_rect = Rect2(196.927, 578.192, 21.0296, 25.2355)
+
+[node name="SoundKey" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_laavl")
+volume_db = -35.657
+
+[node name="colision_chave" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_laavl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="SoundKey" to="." method="_on_sound_key_finished"]

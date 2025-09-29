@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bad7elvfbhwna"]
+
+[ext_resource type="PackedScene" uid="uid://b3fpflbfhwg53" path="res://mundo1.tscn" id="1_cxo67"]
+[ext_resource type="Script" uid="uid://so6vy0au7b02" path="res://word_2.gd" id="1_wa7en"]
+[ext_resource type="PackedScene" uid="uid://uvl26ob5bvn3" path="res://cutscene.tscn" id="2_wa7en"]
+
+[node name="word2" type="Node2D"]
+script = ExtResource("1_wa7en")
+
+[node name="Cutscene" parent="." instance=ExtResource("2_wa7en")]
+offset_left = 8.0
+offset_top = 15.0
+offset_right = 1158.0
+offset_bottom = 555.0
+
+[node name="submenu" parent="." instance=ExtResource("1_cxo67")]
