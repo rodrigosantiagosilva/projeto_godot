@@ -1105,9 +1105,11 @@ light_mask = 3
 position = Vector2(49, 628)
 
 [node name="chave" parent="." instance=ExtResource("3_v7ikv")]
+visible = false
 position = Vector2(265, 581)
 
 [node name="textochave" type="Label" parent="chave"]
+visible = false
 offset_left = -64.8581
 offset_top = -57.685
 offset_right = 89.1419

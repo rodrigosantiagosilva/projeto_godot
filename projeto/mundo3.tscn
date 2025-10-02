@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://opsg5v3tbpij"]
+
+[ext_resource type="PackedScene" uid="uid://ceackrrf8p3om" path="res://submenu.tscn" id="1_vhrnx"]
+
+[sub_resource type="TileSet" id="TileSet_vhrnx"]
+
+[node name="mundo3" type="Node2D"]
+
+[node name="submenu" parent="." instance=ExtResource("1_vhrnx")]
+
+[node name="mapa" type="TileMapLayer" parent="."]
+
+[node name="chao" type="TileMapLayer" parent="mapa"]
+tile_set = SubResource("TileSet_vhrnx")
+
+[node name="paredes" type="TileMapLayer" parent="mapa"]

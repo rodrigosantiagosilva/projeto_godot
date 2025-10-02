@@ -246,8 +246,8 @@ autoplay = true
 bus = &"Music"
 script = ExtResource("8_juq12")
 
-[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="resume"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/resume" to="." method="resume"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="settings"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="CanvasLayer/pauseMenu/submenu/sair" to="." method="sair"]

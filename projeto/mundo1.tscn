@@ -5,10 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://crr6ioevlhp5y" path="res://assets/predio/Buildings.png" id="2_r72i6"]
 [ext_resource type="Script" uid="uid://cm0i3i5nlqj6q" path="res://porta_1.gd" id="3_r72i6"]
 [ext_resource type="Texture2D" uid="uid://dlwmbdnq8up3n" path="res://GandalfHardcore City Tiles/GandalfHardcore City Tiles/GandalfHardcore city tiles 32x32.png" id="4_pl5ag"]
-[ext_resource type="Texture2D" uid="uid://c6jtsk436iv7x" path="res://city 1/Night/1.png" id="5_iuiwn"]
-[ext_resource type="Texture2D" uid="uid://lyibuitdr5ou" path="res://city 1/Night/2.png" id="6_v5rkt"]
-[ext_resource type="Texture2D" uid="uid://dl6bolqoig8v6" path="res://city 1/Night/3.png" id="7_2g8da"]
-[ext_resource type="Texture2D" uid="uid://bu1u2np2tv8r2" path="res://city 1/Night/5.png" id="8_7bbah"]
+[ext_resource type="Texture2D" uid="uid://c6jtsk436iv7x" path="res://assets/city 1/Night/1.png" id="5_iuiwn"]
+[ext_resource type="Texture2D" uid="uid://lyibuitdr5ou" path="res://assets/city 1/Night/2.png" id="6_v5rkt"]
+[ext_resource type="Texture2D" uid="uid://dl6bolqoig8v6" path="res://assets/city 1/Night/3.png" id="7_2g8da"]
+[ext_resource type="Texture2D" uid="uid://bu1u2np2tv8r2" path="res://assets/city 1/Night/5.png" id="8_7bbah"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4vpjt"]
 texture = ExtResource("2_r72i6")
@@ -716,8 +716,8 @@ position = Vector2(3, 0)
 motion_mirroring = Vector2(950, 0)
 
 [node name="05sprite" type="Sprite2D" parent="ParallaxBackground/05"]
-position = Vector2(-1, 281)
-scale = Vector2(1.64931, 1)
+position = Vector2(-58, 140)
+scale = Vector2(1.74827, 1.43519)
 texture = ExtResource("5_iuiwn")
 centered = false
 
@@ -726,8 +726,8 @@ position = Vector2(3, 0)
 motion_mirroring = Vector2(950, 0)
 
 [node name="04sprite" type="Sprite2D" parent="ParallaxBackground/04"]
-position = Vector2(-33, 298)
-scale = Vector2(2.00868, 1)
+position = Vector2(-40, 239)
+scale = Vector2(2.02083, 1.1821)
 texture = ExtResource("6_v5rkt")
 centered = false
 
@@ -736,8 +736,8 @@ position = Vector2(3, 0)
 motion_mirroring = Vector2(950, 0)
 
 [node name="03sprite" type="Sprite2D" parent="ParallaxBackground/03"]
-position = Vector2(-41, 288)
-scale = Vector2(0.969727, 1)
+position = Vector2(-107, 199)
+scale = Vector2(1.08431, 1.27469)
 texture = ExtResource("7_2g8da")
 centered = false
 
@@ -746,8 +746,8 @@ position = Vector2(8, -9)
 motion_mirroring = Vector2(950, 0)
 
 [node name="01sprite" type="Sprite2D" parent="ParallaxBackground/01"]
-position = Vector2(2, 304)
-scale = Vector2(1.76042, 1)
+position = Vector2(-39, 244)
+scale = Vector2(1.8316, 1.18519)
 texture = ExtResource("8_7bbah")
 centered = false
 

@@ -17,7 +17,7 @@ func _on_body_exited(body: CharacterBody2D):
 	texto.visible = false
 
 func _process(delta):
-	if entra and Input.is_action_just_pressed("ui_down"):
+	if entra and Input.is_action_just_pressed("teclaE"):
 		emit_signal("gaveta_aberta")
 		entra = false
 		texto.visible = false
