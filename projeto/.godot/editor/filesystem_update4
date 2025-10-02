@@ -1,0 +1,16 @@
+res://mundo1.tscn
+res://main_menu.tscn
+res://porta_1.gd
+res://mundo2.tscn
+res://cutscene.tscn
+res://actors/player.tscn
+res://chave.tscn
+res://actors/npc.tscn
+res://assets/dialogo/dialogo.tscn
+res://global_node.tscn
+res://submenu.tscn
+res://dialogue_box.tscn
+res://chave.gd
+res://mundo3.tscn
+res://movel.gd
+res://movel_2.gd
