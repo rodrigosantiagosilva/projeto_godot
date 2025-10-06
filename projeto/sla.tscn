@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhxpnfjtuxupe"]
+
+[ext_resource type="Texture2D" uid="uid://djimgy8coktov" path="res://icon.svg" id="1_0hmsm"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_kuedl"]
+polygon = PackedVector2Array(258, 312, 309, 314, 310, 370, 256, 369)
+
+[node name="sla" type="StaticBody2D"]
+position = Vector2(175, 146)
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2(-281, -341)
+occluder = SubResource("OccluderPolygon2D_kuedl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(2, -1)
+scale = Vector2(0.429688, 0.429688)
+texture = ExtResource("1_0hmsm")

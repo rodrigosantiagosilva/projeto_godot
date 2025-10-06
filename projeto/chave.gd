@@ -32,6 +32,6 @@ func _on_movel2_body_entered(body: CharacterBody2D):
 	perto_porta = true
 	
 func _process(delta):
-	if Globals.tem_chave and perto_porta and Input.is_action_just_pressed("teclaE"):
+	if !Globals.tem_chave and perto_porta and Input.is_action_just_pressed("teclaE"):
 		emit_signal("abrir_porta")
 		print("porta foi abrida")

@@ -1,15 +1,20 @@
 extends Area2D
 
-var entrou = false
+var entered = false
+@onready var text_label = $"../Label"
+
+func _ready() -> void:
+	if not entered:
+		text_label.visible = false
 
 func _on_body_entered(body: CharacterBody2D):
-	entrou = true
-
+	entered = true
+	text_label.visible = true
+	
 func _on_body_exited(body: CharacterBody2D):
-	entrou = false
-
+	entered = false
+	text_label.visible = false
+	
 func _physics_process(delta):
-	if entrou and Input.is_action_just_pressed("ui_down"):
-		$AnimationPlayer.play("abreu")
-func _on_animation_player_animation_finished(anim_name):
-	get_tree().change_scene_to_file("res://mundo1.tscn")
+	if entered and Input.is_action_just_pressed("ui_up"):
+		get_tree().change_scene_to_file("res://doicod.tscn")

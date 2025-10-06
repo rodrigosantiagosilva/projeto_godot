@@ -22,5 +22,6 @@ func _physics_process(delta):
 		fechada.visible = false
 		aberta.visible = true 
 		texto2.visible = false
-	if !Globals.tem_chave and aberta.visible and Input.is_action_just_pressed("teclaE") and entra:
+		Globals.tem_chave = false
+	if !Globals.tem_chave and aberta.visible and Input.is_action_just_pressed("ui_up") and entra:
 		get_tree().change_scene_to_file("res://mundo3.tscn")

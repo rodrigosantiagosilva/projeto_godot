@@ -1,6 +1,6 @@
 extends Control
 signal dialogue_finiched
-@export_file("*.json") var d_file
+@export_file("res://assets/dialogo/prisioner_dialogo1.json") var d_file
 var dialogue = []
 var current_dialogue_id = 0
 var d_active = false

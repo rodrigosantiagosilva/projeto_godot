@@ -159,15 +159,16 @@ cache/0/18/0/underline_thickness = 0.0
 cache/0/18/0/scale = 1.0
 
 [node name="dialogo" type="Control"]
+top_level = true
 layout_mode = 3
-anchor_left = -0.583
-anchor_top = -0.066
-anchor_right = -0.583
-anchor_bottom = -0.066
-offset_left = 374.12
-offset_top = 20.12
-offset_right = 538.12
-offset_bottom = 68.12
+anchor_left = -0.584
+anchor_top = -0.042
+anchor_right = -0.584
+anchor_bottom = -0.042
+offset_left = 374.768
+offset_top = 0.216002
+offset_right = 539.768
+offset_bottom = 51.216
 script = ExtResource("1_wgmxe")
 d_file = "res://assets/dialogo/prisioner_dialogo1.json"
 

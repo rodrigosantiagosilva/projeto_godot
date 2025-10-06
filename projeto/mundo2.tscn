@@ -1,8 +1,7 @@
-[gd_scene load_steps=47 format=4 uid="uid://cckuyxlnvfsfo"]
+[gd_scene load_steps=43 format=4 uid="uid://cckuyxlnvfsfo"]
 
 [ext_resource type="Texture2D" uid="uid://cs4gkegp8ec45" path="res://assets/free-house-pixel-art/hut-tile-set/floor-1.png" id="1_5jhgk"]
 [ext_resource type="PackedScene" uid="uid://ceackrrf8p3om" path="res://submenu.tscn" id="1_y8yb8"]
-[ext_resource type="PackedScene" uid="uid://blio2l3l8jl3l" path="res://actors/player.tscn" id="2_q0qo4"]
 [ext_resource type="Texture2D" uid="uid://6r8xot7m48du" path="res://assets/free-house-pixel-art/hut-tile-set/floor-2.png" id="2_vy82g"]
 [ext_resource type="PackedScene" uid="uid://eecfwub52kw1" path="res://chave.tscn" id="3_v7ikv"]
 [ext_resource type="Texture2D" uid="uid://bnkt6ice7eps3" path="res://assets/free-house-pixel-art/hut-tile-set/floor-3.png" id="3_y8yb8"]
@@ -11,20 +10,18 @@
 [ext_resource type="Texture2D" uid="uid://df3qoc06sbga8" path="res://assets/free-house-pixel-art/hut-tile-set/floor-5.png" id="5_e5jh4"]
 [ext_resource type="Texture2D" uid="uid://cpxtsrg502yad" path="res://assets/free-house-pixel-art/hut-tile-set/floor-6.png" id="6_8xmqe"]
 [ext_resource type="Texture2D" uid="uid://1lvqsp6mggrv" path="res://assets/free-house-pixel-art/hut-tile-set/floor-7.png" id="7_42qp8"]
-[ext_resource type="Script" uid="uid://dw5tmcjxxre3h" path="res://prision.gd" id="8_8fstf"]
-[ext_resource type="Texture2D" uid="uid://1owfq4tmy64b" path="res://assets/Jaula.webp" id="8_54eo1"]
 [ext_resource type="Texture2D" uid="uid://w6jle10d6tit" path="res://assets/free-house-pixel-art/hut-tile-set/fence-2.png" id="8_nhy4y"]
 [ext_resource type="Texture2D" uid="uid://byxactrh0fe2e" path="res://assets/pixelinterior_BR/decorations_BR.png" id="9_v8ntl"]
-[ext_resource type="PackedScene" uid="uid://dmb5wx7lsspw3" path="res://actors/npc.tscn" id="10_tiaqt"]
 [ext_resource type="Texture2D" uid="uid://cxyu0mynfnwmb" path="res://assets/coisas de casa/House-bedroom-Sheet.png" id="10_visxv"]
 [ext_resource type="Texture2D" uid="uid://b2ffgfuxlc42a" path="res://assets/coisas de casa/House-kitchen-Sheet2.png" id="11_v2hy7"]
 [ext_resource type="Texture2D" uid="uid://bxm488w8r7fl0" path="res://assets/coisas de casa/House-living room-Sheet.png" id="12_nwgf5"]
 [ext_resource type="Texture2D" uid="uid://dolgyrxdtl7x8" path="res://assets/coisas de casa/House-tileset-Sheet.png" id="13_iwmnf"]
 [ext_resource type="Texture2D" uid="uid://5vgmekao3fyk" path="res://assets/pixelinterior_BR/wardrobes_BR.png" id="14_rueum"]
+[ext_resource type="PackedScene" uid="uid://dw15egem636k6" path="res://player.tscn" id="20_0pbob"]
 [ext_resource type="Script" uid="uid://3ppk3ntsipg4" path="res://movel.gd" id="21_5jhgk"]
 [ext_resource type="Script" uid="uid://dmi2nxt84or88" path="res://movel_2.gd" id="22_vy82g"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w74oi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jhgk"]
 texture = ExtResource("1_5jhgk")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -34,7 +31,7 @@ texture = ExtResource("1_5jhgk")
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0wpa"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vy82g"]
 texture = ExtResource("2_vy82g")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -44,7 +41,7 @@ texture = ExtResource("2_vy82g")
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_frqkd"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y8yb8"]
 texture = ExtResource("3_y8yb8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -53,21 +50,21 @@ texture = ExtResource("3_y8yb8")
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5a63"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5bjlf"]
 texture = ExtResource("4_5bjlf")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8bfid"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5jh4"]
 texture = ExtResource("5_e5jh4")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pec1o"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xmqe"]
 texture = ExtResource("6_8xmqe")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -76,7 +73,7 @@ texture = ExtResource("6_8xmqe")
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dphd"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42qp8"]
 texture = ExtResource("7_42qp8")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -85,7 +82,7 @@ texture = ExtResource("7_42qp8")
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1pngp"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nhy4y"]
 texture = ExtResource("8_nhy4y")
 0:0/0 = 0
 1:0/0 = 0
@@ -94,14 +91,14 @@ texture = ExtResource("8_nhy4y")
 
 [sub_resource type="TileSet" id="TileSet_b252o"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_w74oi")
-sources/1 = SubResource("TileSetAtlasSource_x0wpa")
-sources/2 = SubResource("TileSetAtlasSource_frqkd")
-sources/3 = SubResource("TileSetAtlasSource_e5a63")
-sources/4 = SubResource("TileSetAtlasSource_8bfid")
-sources/6 = SubResource("TileSetAtlasSource_pec1o")
-sources/7 = SubResource("TileSetAtlasSource_3dphd")
-sources/8 = SubResource("TileSetAtlasSource_1pngp")
+sources/0 = SubResource("TileSetAtlasSource_5jhgk")
+sources/1 = SubResource("TileSetAtlasSource_vy82g")
+sources/2 = SubResource("TileSetAtlasSource_y8yb8")
+sources/3 = SubResource("TileSetAtlasSource_5bjlf")
+sources/4 = SubResource("TileSetAtlasSource_e5jh4")
+sources/6 = SubResource("TileSetAtlasSource_8xmqe")
+sources/7 = SubResource("TileSetAtlasSource_42qp8")
+sources/8 = SubResource("TileSetAtlasSource_nhy4y")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yjdyx"]
 texture = ExtResource("9_v8ntl")
@@ -1066,9 +1063,6 @@ texture = ExtResource("5_54eo1")
 tile_size = Vector2i(20, 20)
 sources/0 = SubResource("TileSetAtlasSource_0pbob")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tiaqt"]
-size = Vector2(59.75, 57.25)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0pbob"]
 size = Vector2(21, 17)
 
@@ -1100,10 +1094,6 @@ tile_set = SubResource("TileSet_1ucjh")
 [node name="Porta" type="TileMapLayer" parent="mapa"]
 tile_set = SubResource("TileSet_5jhgk")
 
-[node name="player" parent="." instance=ExtResource("2_q0qo4")]
-light_mask = 3
-position = Vector2(49, 628)
-
 [node name="chave" parent="." instance=ExtResource("3_v7ikv")]
 visible = false
 position = Vector2(265, 581)
@@ -1122,23 +1112,6 @@ scale = Vector2(1.45588, 1.39394)
 texture = ExtResource("5_54eo1")
 region_enabled = true
 region_rect = Rect2(350.851, 142.983, 34.5144, 66.0596)
-
-[node name="prision" type="Area2D" parent="."]
-light_mask = 3
-position = Vector2(922, 114)
-script = ExtResource("8_8fstf")
-
-[node name="SpritePrision" type="Sprite2D" parent="prision"]
-position = Vector2(156, 134)
-scale = Vector2(0.128281, 0.134594)
-texture = ExtResource("8_54eo1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="prision"]
-position = Vector2(156, 132)
-shape = SubResource("RectangleShape2D_tiaqt")
-
-[node name="npc" parent="." instance=ExtResource("10_tiaqt")]
-position = Vector2(994, 284)
 
 [node name="movel" type="Area2D" parent="."]
 script = ExtResource("21_5jhgk")
@@ -1183,11 +1156,11 @@ offset_right = 669.0
 offset_bottom = 560.0
 text = "Abrir?"
 
+[node name="player" parent="." instance=ExtResource("20_0pbob")]
+position = Vector2(-12, -28)
+
 [connection signal="area_exited" from="chave" to="chave" method="_on_area_exited"]
-[connection signal="body_entered" from="chave" to="prision" method="_on_chave_body_entered"]
 [connection signal="body_exited" from="chave" to="chave" method="_on_body_exited"]
-[connection signal="body_entered" from="prision" to="chave" method="_on_prision_body_entered"]
-[connection signal="npc_libertado" from="prision" to="npc" method="_on_prision_npc_libertado"]
 [connection signal="body_entered" from="movel" to="movel" method="_on_body_entered"]
 [connection signal="body_exited" from="movel" to="movel" method="_on_body_exited"]
 [connection signal="gaveta_aberta" from="movel" to="chave" method="_on_movel_gaveta_aberta"]
