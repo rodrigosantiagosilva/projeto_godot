@@ -1,10 +1,8 @@
-res://character_body_2d.tscn
+res://assets/dialogo/dialogo.tscn
+res://player.tscn
+res://main_menu.tscn
 res://mundo1.tscn
 res://mundo2.tscn
 res://mundo3.tscn
-res://main_menu.tscn
-res://assets/dialogo/dialogo.tscn
 res://submenu.tscn
-res://chave.gd
-res://plauer.tscn
-res://player.tscn
+res://assets/dialogo/prisioner_dialogo1.json

@@ -1,122 +1,95 @@
-[gd_scene load_steps=17 format=3 uid="uid://dmb5wx7lsspw3"]
+[gd_scene load_steps=11 format=3 uid="uid://dmb5wx7lsspw3"]
 
+[ext_resource type="Texture2D" uid="uid://cw4o6jr5c3x83" path="res://caracteres/original-01de7f0689db6dad96c022e0e32c24fa-removebg-preview.png" id="1_louo0"]
 [ext_resource type="Script" uid="uid://dtrjgxafs08nw" path="res://actors/npc.gd" id="1_yjbk2"]
-[ext_resource type="PackedScene" uid="uid://cinsiu6flmnti" path="res://assets/dialogo/dialogo.tscn" id="2_qbes0"]
-[ext_resource type="Texture2D" uid="uid://ku6tpi4w17ko" path="res://assets/Sprites/MainCharacter(FreePack)/MainCharacter(FreePack)/Idle.png" id="2_yjbk2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbes0"]
+atlas = ExtResource("1_louo0")
+region = Rect2(231, 0, 33, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjbk2"]
+atlas = ExtResource("1_louo0")
+region = Rect2(297, 0, 33, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmwbd"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(0, 0, 192, 128)
+atlas = ExtResource("1_louo0")
+region = Rect2(429, 0, 33, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0b5f4"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(192, 0, 192, 128)
+atlas = ExtResource("1_louo0")
+region = Rect2(495, 0, 33, 80)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o86md"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(384, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3s6tw"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(576, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iv687"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(768, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sjbeq"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(960, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rkptx"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(1152, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dncvr"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(1344, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lgx4c"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(1536, 0, 192, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_huy04"]
-atlas = ExtResource("2_yjbk2")
-region = Rect2(1728, 0, 192, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_qbes0"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_o86md"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbes0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjbk2")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mmwbd")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0b5f4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o86md")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3s6tw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iv687")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_sjbeq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rkptx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dncvr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lgx4c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_huy04")
 }],
 "loop": true,
-"name": &"prisioner",
+"name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yjbk2"]
-size = Vector2(43, 49)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_louo0"]
+size = Vector2(65, 46)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmwbd"]
-size = Vector2(35, 47)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_louo0"]
+bg_color = Color(0, 0, 0, 1)
 
-[node name="npc" type="StaticBody2D"]
-position = Vector2(225, 184)
+[sub_resource type="LabelSettings" id="LabelSettings_qbes0"]
+font_size = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Npc" type="Area2D"]
 script = ExtResource("1_yjbk2")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-show_behind_parent = true
-position = Vector2(172, 23)
-scale = Vector2(0.714992, 0.678731)
-sprite_frames = SubResource("SpriteFrames_qbes0")
-animation = &"prisioner"
+[node name="sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 0)
+scale = Vector2(1, 0.975)
+sprite_frames = SubResource("SpriteFrames_o86md")
+frame = 1
+frame_progress = 0.416776
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 0
-visibility_layer = 0
-position = Vector2(173.5, 25.5)
-shape = SubResource("RectangleShape2D_yjbk2")
+[node name="colisao" type="CollisionShape2D" parent="."]
+position = Vector2(-3.5, 5)
+shape = SubResource("RectangleShape2D_louo0")
 
-[node name="Chat" type="Area2D" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Chat"]
-physics_interpolation_mode = 2
-position = Vector2(173.5, 26.5)
-shape = SubResource("RectangleShape2D_mmwbd")
-
-[node name="dialogo" parent="." instance=ExtResource("2_qbes0")]
-offset_left = 4.76807
-offset_top = 20.216
-offset_right = 169.768
-offset_bottom = 70.216
+[node name="caixaDialogo" type="Label" parent="CanvasLayer"]
+offset_left = 100.0
+offset_top = 480.0
+offset_right = 1050.0
+offset_bottom = 630.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_louo0")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="dialogue_finiched" from="dialogo" to="." method="_on_dialogo_dialogue_finiched"]
+[node name="textoDialogo" type="Label" parent="CanvasLayer"]
+offset_left = 100.0
+offset_top = 480.0
+offset_right = 1050.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 20
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+
+[node name="interacao" type="Label" parent="."]
+offset_left = -29.0
+offset_top = -37.0
+offset_right = 22.0
+offset_bottom = -14.0
+text = "pressione E"
+label_settings = SubResource("LabelSettings_qbes0")
+metadata/_edit_use_anchors_ = true

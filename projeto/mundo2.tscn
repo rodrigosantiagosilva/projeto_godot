@@ -1067,7 +1067,7 @@ sources/0 = SubResource("TileSetAtlasSource_0pbob")
 size = Vector2(21, 17)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vy82g"]
-size = Vector2(44, 63)
+size = Vector2(47, 81)
 
 [node name="mundo2" type="Node2D"]
 
@@ -1084,11 +1084,11 @@ tile_map_data = PackedByteArray("AAAMACMAAAAIAAEAAAAMACQAAAAIAAIAAAANACMAAAAJAAE
 tile_set = SubResource("TileSet_m7b4g")
 
 [node name="objetos" type="TileMapLayer" parent="mapa"]
-tile_map_data = PackedByteArray("AAAWACYAAgAEAAcAAAAXACUAAgAFAAYAAAAYACUAAgAGAAYAAAAZACUAAgAHAAYAAAAZACYAAgAHAAcAAAAfACUAAgAEAAAAAAAfACYAAgAEAAEAAAAgACUAAgAFAAAAAAAgACYAAgAFAAEAAAAhACUAAgAGAAAAAAAhACYAAgAGAAEAAAAiACUAAgAHAAAAAAAiACYAAgAHAAEAAAAWACUAAgAEAAYAAAAVACMAAQAGAAwAAAAVACQAAQAEAA0AAAAWACMAAQAFAAwAAAAWACQAAQAFAA0AAAAZACMAAQABAA4AAAAZACQAAQAEAA0AAAAaACMAAQAHAAwAAAAaACQAAQAFAA0AAAA=")
+tile_map_data = PackedByteArray("AAAfACUAAgAEAAAAAAAfACYAAgAEAAEAAAAgACUAAgAFAAAAAAAgACYAAgAFAAEAAAAhACUAAgAGAAAAAAAhACYAAgAGAAEAAAAiACUAAgAHAAAAAAAiACYAAgAHAAEAAAAVACMAAQAGAAwAAAAVACQAAQAEAA0AAAAWACMAAQAFAAwAAAAWACQAAQAFAA0AAAAZACMAAQABAA4AAAAZACQAAQAEAA0AAAAaACMAAQAHAAwAAAAaACQAAQAFAA0AAAA=")
 tile_set = SubResource("TileSet_bw5am")
 
 [node name="objetos2" type="TileMapLayer" parent="mapa"]
-tile_map_data = PackedByteArray("AAAGACMAAQABAAwAAAAGACQAAQABAA0AAAAGACUAAQABAA4AAAAGACYAAQABAA8AAAAHACMAAQACAAwAAAAHACQAAQACAA0AAAAHACUAAQACAA4AAAAHACYAAQACAA8AAAAIACMAAQADAAwAAAAIACQAAQADAA0AAAAIACUAAQADAA4AAAAIACYAAQADAA8AAAAPACQAAQANAA0AAAAPACUAAQANAA4AAAAPACYAAQANAA8AAAAQACQAAQAOAA0AAAAQACUAAQAOAA4AAAAQACYAAQAOAA8AAAARACQAAQAPAA0AAAARACUAAQAPAA4AAAARACYAAQAPAA8AAAA=")
+tile_map_data = PackedByteArray("AAAPACQAAQANAA0AAAAPACUAAQANAA4AAAAPACYAAQANAA8AAAAQACQAAQAOAA0AAAAQACUAAQAOAA4AAAAQACYAAQAOAA8AAAARACQAAQAPAA0AAAARACUAAQAPAA4AAAARACYAAQAPAA8AAAAGACQAAQANAA0AAAAGACUAAQANAA4AAAAGACYAAQANAA8AAAAHACQAAQAOAA0AAAAHACUAAQAOAA4AAAAHACYAAQAOAA8AAAAIACQAAQAPAA0AAAAIACUAAQAPAA4AAAAIACYAAQAPAA8AAAA=")
 tile_set = SubResource("TileSet_1ucjh")
 
 [node name="Porta" type="TileMapLayer" parent="mapa"]
@@ -1121,39 +1121,38 @@ position = Vector2(263.5, 602.5)
 shape = SubResource("RectangleShape2D_0pbob")
 
 [node name="textomovel1" type="Label" parent="movel"]
-offset_left = 230.0
-offset_top = 533.0
-offset_right = 306.0
-offset_bottom = 556.0
+offset_left = 227.0
+offset_top = 538.0
+offset_right = 303.0
+offset_bottom = 561.0
 text = "Vasculhar"
 
 [node name="movel2" type="Area2D" parent="."]
 script = ExtResource("22_vy82g")
 
 [node name="porta_aberta" type="Sprite2D" parent="movel2"]
-visible = false
-position = Vector2(643, 591.25)
-scale = Vector2(2.52174, 2.36207)
+position = Vector2(641, 582.25)
+scale = Vector2(2.95652, 2.98276)
 texture = ExtResource("13_iwmnf")
 region_enabled = true
 region_rect = Rect2(67.5974, 192.901, 23.4831, 29.792)
 
 [node name="porta_fechada" type="Sprite2D" parent="movel2"]
-position = Vector2(643.5, 591.5)
-scale = Vector2(2.47826, 2.34375)
+position = Vector2(641, 582.5)
+scale = Vector2(2.86957, 2.96875)
 texture = ExtResource("13_iwmnf")
 region_enabled = true
 region_rect = Rect2(4, 191.5, 23, 32.5)
 
 [node name="colisionporta" type="CollisionShape2D" parent="movel2"]
-position = Vector2(644, 593.5)
+position = Vector2(642.5, 584.5)
 shape = SubResource("RectangleShape2D_vy82g")
 
 [node name="textomovel2" type="Label" parent="movel2"]
-offset_left = 620.0
-offset_top = 533.0
-offset_right = 669.0
-offset_bottom = 560.0
+offset_left = 619.0
+offset_top = 521.0
+offset_right = 666.0
+offset_bottom = 544.0
 text = "Abrir?"
 
 [node name="player" parent="." instance=ExtResource("20_0pbob")]

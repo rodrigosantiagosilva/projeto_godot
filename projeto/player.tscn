@@ -370,15 +370,15 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(59.5, 614.786)
+position = Vector2(59, 614)
 shape = SubResource("RectangleShape2D_1kp85")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(62, 615)
-zoom = Vector2(1.5, 1.5)
+position = Vector2(59, 616)
+zoom = Vector2(2.5, 2.5)
 limit_left = 0
 limit_top = 300
-limit_right = 2000
+limit_right = 1150
 limit_bottom = 650
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
