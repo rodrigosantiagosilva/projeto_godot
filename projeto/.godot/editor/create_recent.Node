@@ -1,9 +1,11 @@
+Camera2D
+Area2D
+StaticBody2D
 Timer
 Label
 CanvasLayer
 CollisionShape2D
 AnimatedSprite2D
-Area2D
 TileMapLayer
 Sprite2D
 Node
@@ -11,5 +13,3 @@ RichTextLabel
 ParallaxLayer
 ColorRect
 ParallaxBackground
-StaticBody2D
-AnimationPlayer

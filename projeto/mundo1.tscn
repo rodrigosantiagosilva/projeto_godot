@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://lyibuitdr5ou" path="res://city 1/Night/2.png" id="6_v5rkt"]
 [ext_resource type="Texture2D" uid="uid://dl6bolqoig8v6" path="res://city 1/Night/3.png" id="7_2g8da"]
 [ext_resource type="Texture2D" uid="uid://bu1u2np2tv8r2" path="res://city 1/Night/5.png" id="8_7bbah"]
-[ext_resource type="PackedScene" uid="uid://dw15egem636k6" path="res://player.tscn" id="9_v5rkt"]
+[ext_resource type="PackedScene" uid="uid://blio2l3l8jl3l" path="res://personagem_mario/player.tscn" id="9_v5rkt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4vpjt"]
 texture = ExtResource("2_r72i6")
@@ -951,6 +951,18 @@ _data = {
 
 [node name="mundo1" type="Node2D"]
 
+[node name="player" parent="." instance=ExtResource("9_v5rkt")]
+position = Vector2(72, 610)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-3.00001, -39)
+scale = Vector2(2.02083, 1.1821)
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = -53
+limit_right = 1150
+limit_bottom = 650
+
 [node name="submenu" parent="." instance=ExtResource("1_v5rkt")]
 
 [node name="mapa" type="TileMapLayer" parent="."]
@@ -1003,7 +1015,7 @@ position = Vector2(3, 0)
 motion_mirroring = Vector2(950, 0)
 
 [node name="05sprite" type="Sprite2D" parent="ParallaxBackground/05"]
-position = Vector2(-58, 140)
+position = Vector2(-110, 152)
 scale = Vector2(1.74827, 1.43519)
 texture = ExtResource("5_iuiwn")
 centered = false
@@ -1037,9 +1049,6 @@ position = Vector2(-39, 244)
 scale = Vector2(1.8316, 1.18519)
 texture = ExtResource("8_7bbah")
 centered = false
-
-[node name="player" parent="." instance=ExtResource("9_v5rkt")]
-position = Vector2(3, -47)
 
 [connection signal="body_entered" from="porta1" to="porta1" method="_on_body_entered"]
 [connection signal="body_exited" from="porta1" to="porta1" method="_on_body_exited"]

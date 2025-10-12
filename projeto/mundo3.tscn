@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://opsg5v3tbpij"]
+[gd_scene load_steps=27 format=4 uid="uid://opsg5v3tbpij"]
 
 [ext_resource type="Texture2D" uid="uid://cs4gkegp8ec45" path="res://assets/free-house-pixel-art/hut-tile-set/floor-1.png" id="1_uk1g5"]
 [ext_resource type="Texture2D" uid="uid://6r8xot7m48du" path="res://assets/free-house-pixel-art/hut-tile-set/floor-2.png" id="2_pan8f"]
@@ -11,8 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://c4obmhrg4i76k" path="res://assets/coisas de casa/Design_sem_nome-removebg-preview.png" id="9_wnoar"]
 [ext_resource type="Script" uid="uid://dw5tmcjxxre3h" path="res://prision.gd" id="11_68uoe"]
 [ext_resource type="Texture2D" uid="uid://1owfq4tmy64b" path="res://assets/Jaula.webp" id="12_23pge"]
+[ext_resource type="PackedScene" uid="uid://blio2l3l8jl3l" path="res://personagem_mario/player.tscn" id="13_68uoe"]
 [ext_resource type="PackedScene" uid="uid://ceackrrf8p3om" path="res://submenu.tscn" id="14_23pge"]
-[ext_resource type="PackedScene" uid="uid://dw15egem636k6" path="res://player.tscn" id="14_33fuq"]
+[ext_resource type="PackedScene" uid="uid://cioijhurm3hwv" path="res://personagem_mario/enemy.tscn" id="14_33fuq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ttphg"]
 texture = ExtResource("1_uk1g5")
@@ -658,8 +659,21 @@ texture = ExtResource("12_23pge")
 position = Vector2(154, 138.5)
 shape = SubResource("RectangleShape2D_h1gm6")
 
-[node name="player" parent="." instance=ExtResource("14_33fuq")]
-position = Vector2(-20, -29)
+[node name="player" parent="." instance=ExtResource("13_68uoe")]
+position = Vector2(52, 628)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-2, -41)
+scale = Vector2(2.02083, 1.1821)
+zoom = Vector2(2.5, 2.5)
+limit_left = 0
+limit_top = -53
+limit_right = 550
+limit_bottom = 635
+
+[node name="Enemy" parent="." instance=ExtResource("14_33fuq")]
+position = Vector2(396, 597)
+collision_mask = 1
 
 [connection signal="body_entered" from="prision" to="prision" method="_on_body_entered"]
 [connection signal="body_exited" from="prision" to="prision" method="_on_body_exited"]
