@@ -1,6 +1,6 @@
 extends Node2D
 
-const bala = preload("res://armasM/bala.tscn")
+const bala = preload("res://armas/bala.tscn")
 var pode_atacar = true
 var cooldown = 0.25
 
@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 	else:
 		scale.y = 1
 
-	if visible and Input.is_action_just_pressed("Attack_arm"):
+	if visible and Input.is_action_just_pressed("atirar"):
 		atirar()
 
 func atirar():

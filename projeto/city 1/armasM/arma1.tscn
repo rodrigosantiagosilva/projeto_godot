@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ymysv44exvxq"]
 
-[ext_resource type="Script" uid="uid://byahkkt5hmc31" path="res://city 1/armasM/arma_1.gd" id="1_b06pg"]
+[ext_resource type="Script" uid="uid://byahkkt5hmc31" path="res://personagem_mario/armasM/arma_1.gd" id="1_b06pg"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hmy2f"]
 load_path = "res://.godot/imported/arma1.png-9bfa422d07ccc048e86c8ef9ca8918ba.ctex"

@@ -1,15 +1,9 @@
-res://personagem_mario/character_body_2d.gd
-res://personagem_mario/enemy.gd
+res://main_menu.tscn
 res://mundo1.tscn
 res://mundo2.tscn
 res://mundo3.tscn
-res://main_menu.tscn
 res://submenu.tscn
 res://personagem_mario/player.tscn
-res://city 1/armasM/arma_1.gd
 res://city 1/armasM/arma1.tscn
-res://character_body_2d.gd
-res://movel_2.gd
 res://caracteres/enemy.tscn
-res://personagem_mario/enemy.tscn
-res://prefabs/enemy_spawner.tscn
+res://personagem_mario/armasM/arma_1.gd
